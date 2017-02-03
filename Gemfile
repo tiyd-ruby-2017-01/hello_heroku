@@ -1,6 +1,7 @@
 source 'https://rubygems.org'
 ruby '2.3.1'
 
+gem 'rake'
 gem 'sinatra'
 gem 'activerecord' # or 'datamapper'
 gem 'pg'
