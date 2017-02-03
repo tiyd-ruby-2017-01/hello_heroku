@@ -9,7 +9,7 @@ if database_config.blank?
   database_config = YAML::load(File.open('config/database.yml'))
 end
 
-ActiveRecord::Base.establish_connection(database_url)
+ActiveRecord::Base.establish_connection(database_config)
 
 after do
   ActiveRecord::Base.connection.close
